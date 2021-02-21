@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop do Kleiton</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <Header>
+        <div class="menu">
+            <h1>Pet Shop do Kleiton</h1>
+            <h2>Edição</h2>
+            <ul>
+                <li><a href="cadastro.html">Agendamento</a></li>
+                <li><a href="busca.html">Busca</a></li>
+            </ul>
+        </div>
+    </Header>
+
+    <main>
+        <div id="edicao" class="formulario">
+            <form action="" id="form-edicao">
+                <label for="cliente">Cliente </label><input type="text" id="cliente" class="estiloGrande"><br/>
+                <label for="pet">Pet </label><input type="text" id="pet" class="estiloGrande"><br/>
+                <label for="servico">Serviço </label><select name="servico" id="servico" class="estiloGrande">
+                    <option value="banho">Banho</option>
+                    <option value="tosa">Tosa</option>
+                    <option value="banhoEtosa">Banho e Tosa</option>
+                    <option value="vacina">Vacina</option>
+                </select><br/>
+                <label for="status">Status </label><select name="status" id="status" class="estiloGrande">
+                    <option value="agendado">Agendado</option>
+                    <option value="aguardandoAvaliacao">Aguardando Avaliação</option>
+                    <option value="concluido">concluido</option>
+                </select><br/>
+                <label for="data">Data </label><input type="datetime-local" name="data" id="data" class="estiloGrande"><br/>
+                <label for="observacoes">Observações </label><textarea name="observacoes" id="observacoes" cols="16" rows="3" class="estiloGrande"></textarea><br/>
+                <input type="submit" value="Editar ID" id="editar">
+            </form>
+            <div id="saida-edicao"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Pet Shop do Kleiton</p>
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="scripts/edicao.js"></script>
+</body>
+
+</html>
