@@ -1,0 +1,142 @@
+/* ----------------------------------------
+-------------------Geral-------------------
+---------------------------------------- */
+body{
+    background: rgb(52, 162, 212);
+    font: normal 15pt Arial;
+}
+/* ----------------------------------------
+-----------------Cabeçalho-----------------
+---------------------------------------- */
+header, footer{
+    color: white;
+    text-align: center;
+}
+.menu{
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    background-color: rgb(22, 29, 128);
+}
+.menu ul{
+    margin:10px;
+    padding:0px;
+}
+.menu li{
+    margin:10px;
+    padding:0px;
+    display: inline;
+}
+.menu a{
+    text-align: left;
+    text-transform: uppercase;
+    color: #85b4f1;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+.menu a:hover{
+    font-size: 1.2em;
+    color: rgb(75, 218, 142);
+    /* text-decoration: underline; */
+}
+/* ----------------------------------------
+-------------------Corpo-------------------
+---------------------------------------- */
+main{
+    font-size: 18px;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 960px;
+    margin: 30px auto 30px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 363);   
+}
+#cadastro label, #edicao label{
+    margin-top: 10px;
+    margin-left: 75px;
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    vertical-align: center;
+}
+.estiloGrande{
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 1.5px;
+    width: 300px;
+    vertical-align: top;
+}
+#cadastrar, #editar{
+    display: inline-block;
+    width: 150px;
+    margin-left: 39%;
+    text-align: center;
+    background: rgb(26, 9, 102);
+    color: white;
+    border-radius: 8px;
+}
+.estiloBusca{
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 60px;
+    margin-bottom: 5px;
+    padding: 1.5px;
+    width: 165px;
+    text-align: center;
+    vertical-align: center;
+}
+#buscar, #listar, #editar{
+    background: rgb(26, 9, 102);
+    color: white;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 14px;
+    padding: 1.5px;
+    width: 150px;
+    text-align: center;
+    vertical-align: center;
+}
+#cadastrar:hover, #buscar:hover, #editar:hover, #listar:hover{
+    transform: scale(1.1);
+    background: blue;
+}
+#saida-cadastro, #saida-edicao, #erro-busca{
+    margin: 5px auto;
+    text-align: center;
+}
+#saida-busca th, #saida-busca tb, #saida-busca tr{
+    font-size: 16px;
+    margin: auto;
+    padding: 7px 12px;
+    text-align: center;
+    border: 1.5px solid black;
+}
+#saida-busca td{
+    font-size: auto;
+    margin: auto;
+    padding: 7px 12px;
+    text-align: center;
+    border: 1.5px solid black;
+}
+.bAmarelo{
+    background: rgb(255, 209, 57);
+    border-radius: 4px;
+    padding: 1.5px;
+    width: 50px;
+    text-align: center;
+    vertical-align: center;
+}
+.bVermelho{
+    background: rgb(223, 68, 6);
+    border-radius: 4px;
+    padding: 1.5px;
+    width: 50px;
+    text-align: center;
+    vertical-align: center;
+}
+/* ----------------------------------------
+------------------Rodapé-------------------
+---------------------------------------- */

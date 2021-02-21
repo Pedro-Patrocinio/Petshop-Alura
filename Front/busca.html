@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop do Kleiton</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <Header>
+        <div class="menu">
+            <h1>Pet Shop do Kleiton</h1>
+            <h2>Edição</h2>
+            <ul>
+                <li><a href="cadastro.html">Agendamento</a></li>
+                <li><a href="busca.html">Busca</a></li>
+            </ul>
+        </div>
+    </Header>
+
+    <main>
+        <div id="busca">
+            <div id="form-busca">
+                <select name="id-nome" id="id-nome" class="estiloBusca">
+                    <option value="id">Selecionar por ID</option>
+                    <option value="nome">Selecionar por nome</option>
+                </select>
+                <label for="id"></label><input type="number" id="id" class="estiloBusca">
+                <input type="button" value="Buscar" id="buscar" class="estiloBusca" onclick="buscar()">
+                <input type="button" value="Listar Todos" id="listar" class="estiloBusca" onclick="listar()">
+            </div>
+            <div id="erro-busca"></div>
+            <table id="saida-busca">
+                <thead id="th"></thead>
+                <tbody id="tb"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Pet Shop do Kleiton</p>
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="scripts/busca.js"></script>
+</body>
+
+</html>
