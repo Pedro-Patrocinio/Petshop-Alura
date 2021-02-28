@@ -1,5 +1,5 @@
 const express = require('express');
-const consign = require('consign');
+const consign = require('../node_modules/consign');
 const bodyParser = require('body-parser');
 
 module.exports = () =>{
